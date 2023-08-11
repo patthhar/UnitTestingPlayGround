@@ -21,7 +21,7 @@ class ParameterizedIsPalindrome(
 
   companion object {
     @JvmStatic
-    @Parameters
+    @Parameters(name = "{index} {0} isPalindrome - {1}")
     fun parameters(): List<Array<Any>> {
       return listOf(
         arrayOf("hello", false),
